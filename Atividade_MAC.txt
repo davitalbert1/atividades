@@ -1,0 +1,165 @@
+﻿Qual é a importância do conteúdo do campo Endereço Destino?
+A sua importância é informar à rede em que está sendo transmitido qual é o endereço que deve chegar, permitindo que a rede encontre-o de forma apropriada.
+
+
+Por que o PC envia um broadcast ARP antes da primeira requisição ping?
+Pois o arp permite o mapeamento da rede, permitindo que a requisição ping seja feita ao devido equipamento de rede.
+
+
+Qual é o endereço MAC origem no primeiro quadro?
+O endereço MAC mostrado no primeiro quadro é ff ff ff ff ff ff f0 1f.
+
+
+Qual é o ID do fornecedor (OUI) da NIC de origem na resposta do ARP?
+O ID do fornecedor é f0:1.
+
+
+Que parte do endereço MAC é a OUI?
+São os três primeiros caracteres (bytes) do endereço MAC, servindo como identificador.
+
+
+Qual é o número serial da NIC de origem?
+50:fd:c8
+
+
+Parte 2
+
+
+Qual é o endereço IP do gateway padrão do PC?
+O endereço é 192.164.56.1
+
+
+Qual é o endereço MAC da NIC do PC?
+0a.0
+
+
+Qual é o endereço MAC do gateway padrão?
+O MAC do gateway é 0a.00.27.00.00.0f
+
+
+
+
+
+
+Qual é a parte de número de série do endereço MAC neste dispositivo? 
+O endereço MAC é 5C-26-0A-24-2A-60 
+
+
+Usando o exemplo acima, localize o nome do fornecedor que fabricou essa placa de interface de rede. 
+O fornecedor no exemplo é a Intel;
+
+
+No prompt de comando do PC-A, emita o comando ipconfig /all e identifique a parte do OUI do endereço MAC da placa de rede do PC-A. 
+C0-B8
+
+
+Identifique a parte de número de série do endereço MAC na NIC de PC-A.  
+O edereço NIc é C0-B8-83-1E-79-FE
+
+
+Identifique o nome do fornecedor que fabricou a NIC de PC-A.  
+O fornecedor é a Microsoft
+Qual é o endereço MAC de VLAN 1 em S1?
+001b.0c6d.8f40 
+
+
+Qual é o número de série do MAC para VLAN 1?  
+001b.0c6d.8f40 
+
+
+Qual é o OUI para VLAN 1?
+001
+
+
+Com base nessa OUI, qual é o nome do fornecedor? 
+O fornecedor é Intel
+
+
+O que significa bia? 
+Na área de redes de computadores, a sigla "BIA" pode se referir a "Basic Input/Output System (BIOS) Identification Area" ou "Baseboard Management Controller (BMC) Identification Area", que é usado para fornecer informações do sistema para o sistema operacional.
+
+
+Por que a saída indica o mesmo endereço MAC duas vezes?
+Porque 1 deles mostra o MAC bia
+
+
+Que endereços da Camada 2 são exibidos em S1?  
+ 192.168.1.2 e 192.168.1.3
+
+
+O switch exibe o endereço MAC de PC-A? Se você respondeu sim, em que porta ele estava? 
+Não
+
+
+É possível ter broadcasts no nível da Camada 2? Em caso afirmativo, qual seria o endereço MAC? 
+Não
+
+
+Por que você precisaria saber o endereço MAC de um dispositivo?  
+Para saber qual eletronico é o destinatário das informações.
+
+
+
+
+Quais são os endereços físicos do adaptador de Ethernet? 
+Endereço MAC PC-A: 000.000.000.001
+
+
+Endereço MAC PC-B: 000.000.000.001
+
+
+Na segunda linha da saída do comando, quais são os endereços de hardware (ou bia [burned-in address, endereço gravado na ROM])? 
+S1 Fast Ethernet 0/1 MAC Address: 00:1A:2B:3C:4D:5E
+S2 Fast Ethernet 0/1 MAC Address:  08:76:5A:4F:3E:2D
+
+
+Existe algum endereço MAC gravado na tabela de endereços MAC?  
+Sim, mostram todos os dispositivos conectados.
+
+
+Quais endereços MAC estão registrados na tabela? Em que portas do switch eles estão mapeados e a que dispositivos pertencem? Ignore os endereços MAC que estão mapeados para a CPU. 
+   1    00:1A:2B:3C:4D:5E  DYNAMIC     Fa0/1
+   1    08:76:5A:4F:3E:2D  DYNAMIC     Fa0/2
+   1    12:34:56:78:90:AB  STATIC      Fa0/3
+   1    AA:BB:CC:DD:EE:FF  DYNAMIC     Fa0/4
+
+
+Pertencem a computadores e a portas de ETHERNET
+
+
+Se você não havia gravado anteriormente os endereços MAC dos dispositivos de rede na Etapa 1, como você poderia dizer a quais dispositivos os endereços MAC pertencem, usando apenas a saída do comando show mac address-table? Isso funciona em todos os cenários?  
+Basta ir nos dispositivos conectados e consultar o endereço MAC, sim.
+
+
+A tabela de endereços MAC tem algum endereço para VLAN 1? Há outros endereços MAC listados?
+Sim, possuem Endereços MAC dos dispositivos conectados.
+
+
+A tabela de endereços MAC tem algum endereço para VLAN 1? 
+Sim, 2A:8F:B4:1D:6E:3C
+
+
+Há outros endereços MAC listados? 
+Sim
+
+
+Aguarde 10 segundos, digite o comando show mac address-table e pressione Enter. Há novos endereços na tabela de endereços MAC? 
+Não, nenhum dispositivo novo foi adicionado à rede.
+
+
+Não incluindo endereços de difusão seletiva ou difusão, quantos pares de endereços IP para MAC do dispositivo foram aprendidos pelo ARP? 
+Foram encontrados 4 pares.
+
+
+
+
+Todos os dispositivos tiveram respostas bem-sucedidas? Em caso negativo, verifique o cabeamento e as configurações de IP.
+Sim, as respostas foram bem-sucedidas.
+
+
+O switch adicionou outros endereços MAC à tabela de endereços MAC? Em caso afirmativo, que endereços e dispositivos?
+Não, nenhum dispositivo novo foi adicionado à rede.
+
+
+ A cache ARP de PC-B tem entradas adicionais para todos os dispositivos de rede que receberam pings? 
+Não, somente o switch tem essas entradas.
